@@ -4,46 +4,86 @@ import io.cucumber.java.en.*;
 
 public class Signin_valid_invalid_SD {
 
-	@Given("I want to write a step with precondition")
-	public void i_want_to_write_a_step_with_precondition() {
-	    // Write code here that turns the phrase above into concrete actions
-	     
-	}
-
-	@Given("some other precondition")
-	public void some_other_precondition() {
-	    // Write code here that turns the phrase above into concrete actions
-	   
-	}
-
-	@When("I complete action")
-	public void i_complete_action() {
-	    // Write code here that turns the phrase above into concrete actions
+	@Given("user is on the website home page")
+	public void user_is_on_the_website_home_page() {
 	    
+	   
 	}
 
-	@When("some other action")
-	public void some_other_action() {
-	    // Write code here that turns the phrase above into concrete actions
-	     
-	}
-
-	@When("yet another action")
-	public void yet_another_action() {
-	    // Write code here that turns the phrase above into concrete actions
+	@When("user click on get started button")
+	public void user_click_on_get_started_button() {
 	    
-	}
-
-	@Then("I validate the outcomes")
-	public void i_validate_the_outcomes() {
-	    // Write code here that turns the phrase above into concrete actions
 	   
 	}
 
-	@Then("check more outcomes")
-	public void check_more_outcomes() {
+	@Then("user is navigated to the login home page")
+	public void user_is_navigated_to_the_login_home_page() {
+	    
 	   
 	}
+
+	@Then("user clicks on the sign in button")
+	public void user_clicks_on_the_sign_in_button() {
+	    
+	   
+	}
+
+	@Given("user enters valid username and password")
+	public void user_enters_valid_username_and_password() {
+	    
+	   
+	}
+
+	@When("user clicks on the login button")
+	public void user_clicks_on_the_login_button() {
+	    
+	   
+	}
+
+	@Then("user is navigated to the portal home page")
+	public void user_is_navigated_to_the_portal_home_page() {
+	    
+	   
+	}
+
+	@Then("after reaching to portal home page user clicks on the logout button")
+	public void after_reaching_to_portal_home_page_user_clicks_on_the_logout_button() {
+	    
+	   
+	}
+
+	@Given("user enters invalid username and valid password")
+	public void user_enters_invalid_username_and_valid_password() {
+	    
+	   
+	}
+
+	@When("click on login button")
+	public void click_on_login_button() {
+	    
+	   
+	}
+
+	@Then("System should alert user")
+	public void system_should_alert_user() {
+	    
+	   
+	}
+
+	@Given("user enters valid username and invalid password")
+	public void user_enters_valid_username_and_invalid_password() {
+	    
+	   
+	}
+
+	@Given("user enters invalid username and invalid password")
+	public void user_enters_invalid_username_and_invalid_password() {
+	    
+	   
+	}
+
+
+
 
 
 

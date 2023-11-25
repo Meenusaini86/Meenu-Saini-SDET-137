@@ -1,15 +1,29 @@
+@signin
+Feature: Check login funtionality with valid and invalid credentials
 
-@tag
-Feature: Title of your feature
-  I want to use this template for my feature file
+  Background: 
+    Given user is on the website home page
+    When user click on get started button
+    Then user is navigated to the login home page
+    And user clicks on the sign in button
 
-  @tag1
-  Scenario: Title of your scenario
-    Given I want to write a step with precondition
-    And some other precondition
-    When I complete action
-    And some other action
-    And yet another action
-    Then I validate the outcomes
-    And check more outcomes
+  Scenario: Check login funtionality with valid username and password
+    Given user enters valid username and password
+    When user clicks on the login button
+    Then user is navigated to the portal home page
+    And after reaching to portal home page user clicks on the logout button
 
+  Scenario: invalid username and valid password
+    Given user enters invalid username and valid password
+    When click on login button
+    Then System should alert user
+
+  Scenario: valid username and invalid password
+    Given user enters valid username and invalid password
+    When click on login button
+    Then System should alert user
+
+  Scenario: invalid username and invalid password
+    Given user enters invalid username and invalid password
+    When click on login button
+    Then System should alert user
