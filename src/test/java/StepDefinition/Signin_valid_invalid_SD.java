@@ -20,14 +20,13 @@ public class Signin_valid_invalid_SD {
 	By password = By.id("id_password");
 	By LoginBtn = By.xpath("//div[2]//div//div[2]//form//input[4]");
 	By signoutBtn = By.xpath("//div[2]//ul//a[3]");
-	By LoggedIn = By.xpath("//div[text()=’You are logged in’]");
-	By inValidMsg = By.xpath("//div[text()=’Invalid Username and Password’]");
+ 	By inValidMsg = By.xpath("//div[text()=’Invalid Username and Password’]");
 
 	@BeforeStep
 	public void delay() {
 		try {
 
-			Thread.sleep(800);
+			Thread.sleep(80);
 		} catch (InterruptedException e) {
 			System.out.println(e);
 			throw new RuntimeException(e);
@@ -81,7 +80,7 @@ public class Signin_valid_invalid_SD {
 	@Then("user is navigated to the portal home page")
 	public void user_is_navigated_to_the_portal_home_page() {
 
-		//driver.findElement(LoggedIn).isDisplayed();
+		driver.findElement(signoutBtn).isDisplayed();
 
 	}
 
@@ -142,7 +141,7 @@ public class Signin_valid_invalid_SD {
 
 	@After
 	public void AfterEachScenario() {
-	//	driver.close();
-		//driver.quit();
+		//driver.close();
+		
 	}
 }
