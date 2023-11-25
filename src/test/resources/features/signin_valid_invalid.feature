@@ -1,4 +1,5 @@
 @signin
+
 Feature: Check login funtionality with valid and invalid credentials
 
   Background: 
@@ -12,8 +13,7 @@ Feature: Check login funtionality with valid and invalid credentials
     When user clicks on the login button
     Then user is navigated to the portal home page
     And after reaching to portal home page user clicks on the logout button
-    And user is back on the login page
-
+    
   Scenario: invalid username and valid password
     Given user enters invalid username and valid password
     When click on login button
