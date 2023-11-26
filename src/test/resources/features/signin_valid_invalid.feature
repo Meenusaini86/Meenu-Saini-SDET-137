@@ -1,19 +1,17 @@
 @signin
-
 Feature: Check login funtionality with valid and invalid credentials
 
   Background: 
-    Given user is on the website home page
-    When user click on get started button
-    Then user is navigated to the login home page
-    And user clicks on the sign in button
+    Given user is on the website home page and user click on get started button
+    When user is navigated to the login home page
+    Then user clicks on the sign in button
 
   Scenario: Check login funtionality with valid username and password
     Given user enters valid username and password
     When user clicks on the login button
     Then user is navigated to the portal home page
     And after reaching to portal home page user clicks on the logout button
-    
+
   Scenario: invalid username and valid password
     Given user enters invalid username and valid password
     When click on login button

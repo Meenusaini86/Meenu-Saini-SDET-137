@@ -30,8 +30,8 @@ public class Linked_listed_SD {
 	By TopicsCovered = By.className("bg-secondarytext-white");
 	By Introduction = By.xpath("//a[text()='Introduction']");
 	By Tryhere = By.className("btn-info");
-	By tryeditor = By.id("#editor");
-	By RunButton = By.className("button");
+	By tryeditor = By.xpath("//div//div//div[6]");
+	//By RunButton = By.className("button");
 	By createLinkedList = By.xpath("//div[2]//ul[2]//a");
 	By Typesoflinkedlist = By.xpath("//div[2]//ul[3]//a");
 	By Implementation = By.xpath("//div[2]//ul[4]//a");
@@ -107,7 +107,8 @@ public class Linked_listed_SD {
 	@When("user redirected to page tryeditor with  Run button to test")
 	public void user_redirected_to_page_tryeditor_with_run_button_to_test() {
 		//driver.findElement(tryeditor).isDisplayed();
-		//driver.findElement(tryeditor).sendKeys("print hello");
+		
+		driver.findElement(tryeditor).sendKeys("print hello");
 		
 	}
 
