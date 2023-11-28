@@ -165,5 +165,11 @@ public class Linked_listed_SD {
 		driver.findElement(Deletion).click();
 	}
 
+	@After
+	
+	public void close() {
+		driver.close();
+		driver.quit();
+	}
 	
 }

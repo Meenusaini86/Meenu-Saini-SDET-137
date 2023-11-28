@@ -86,8 +86,8 @@ public class Signin_valid_invalid_SD {
 
 		driver.findElement(signoutBtn).click();
 
-		// driver.close();
-		// driver.quit();
+		 driver.close();
+		 driver.quit();
 	}
 
 	@Given("user enters invalid username and valid password")
@@ -112,8 +112,8 @@ public class Signin_valid_invalid_SD {
 
 		driver.findElement(inValidMsg).isDisplayed();
 
-		// driver.close();
-		// driver.quit();
+		driver.close();
+	    driver.quit();
 	}
 
 	@Given("user enters valid username and invalid password")
