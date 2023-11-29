@@ -30,8 +30,8 @@ public class Linked_listed_SD {
 	By TopicsCovered = By.className("bg-secondarytext-white");
 	By Introduction = By.xpath("//a[text()='Introduction']");
 	By Tryhere = By.className("btn-info");
-	By tryeditor = By.xpath("//*[@id=\"answer_form\"]/div/div");
-	//By RunButton = By.className("button");
+	By tryeditor = By.xpath("//div[@class='CodeMirror-sizer']/div/div/div/div/div/pre");
+	By RunButton = By.xpath("Xpath=//input[@type='Run']");
 	By createLinkedList = By.xpath("//div[2]//ul[2]//a");
 	By Typesoflinkedlist = By.xpath("//div[2]//ul[3]//a");
 	By Implementation = By.xpath("//div[2]//ul[4]//a");
@@ -43,7 +43,7 @@ public class Linked_listed_SD {
 	public void delay() {
 		try {
 
-			Thread.sleep(60);
+			Thread.sleep(800);
 		} catch (InterruptedException e) {
 			System.out.println(e);
 			throw new RuntimeException(e);
@@ -116,7 +116,7 @@ public class Linked_listed_SD {
 	public void after_writing_code_in_tryeditor_user_click_on_run_button_to_check_result() {
  
 		
-	//	driver.findElement(RunButton).click();
+	     driver.findElement(RunButton).click();
 	}
 
 	
