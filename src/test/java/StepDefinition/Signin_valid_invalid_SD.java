@@ -26,7 +26,7 @@ public class Signin_valid_invalid_SD {
 	public void delay() {
 		try {
 
-			Thread.sleep(80);
+			Thread.sleep(600);
 		} catch (InterruptedException e) {
 			System.out.println(e);
 			throw new RuntimeException(e);
