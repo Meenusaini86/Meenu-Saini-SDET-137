@@ -13,7 +13,7 @@ public class Signin_valid_invalid_SD {
 	public static WebDriver driver;
 	String URL = "https://dsportalapp.herokuapp.com/";
 
-	By getStartedBtn = By.xpath("//div[1]//div//div//a//button");
+	By getStartedBtn = By.className("btn");
 	By NumpyNinja = By.className("navbar-brand");
 	By signinBtn = By.xpath("//div[2]//ul//a[3]");
 	By username = By.id("id_username");
@@ -26,7 +26,7 @@ public class Signin_valid_invalid_SD {
 	public void delay() {
 		try {
 
-			Thread.sleep(600);
+			Thread.sleep(60);
 		} catch (InterruptedException e) {
 			System.out.println(e);
 			throw new RuntimeException(e);

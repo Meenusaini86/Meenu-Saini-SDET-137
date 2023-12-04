@@ -43,7 +43,7 @@ public class Linked_listed_SD {
 	public void delay() {
 		try {
 
-			Thread.sleep(800);
+			Thread.sleep(80);
 		} catch (InterruptedException e) {
 			System.out.println(e);
 			throw new RuntimeException(e);
@@ -85,16 +85,13 @@ public class Linked_listed_SD {
 	List<WebElement> listOfStartedBtn =	driver.findElements(getstartedBtn1);
 	
 	listOfStartedBtn.get(2).click();
-	//driver.findElement(getstartedBtn1).isDisplayed();
-
-	//driver.findElement(getstartedBtn1).click();
-
+	
 	}
 
 	@Given("user scroll downs and click on the introduction link")
 	public void user_scroll_downs_and_click_on_the_introduction_link() {
 
-		
+	
 		driver.findElement(Introduction).click();
 	}
 

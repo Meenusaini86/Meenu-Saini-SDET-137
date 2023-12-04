@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import io.cucumber.java.BeforeStep;
 import io.cucumber.java.en.*;
 
 public class Stack_SD {
@@ -13,18 +14,30 @@ public class Stack_SD {
 	public static WebDriver driver;
 	String URL = "https://dsportalapp.herokuapp.com/";
 	
-	By getstartedBtn = By.xpath("//a[text()='Get Started']");;
+	
+	By tryeditor = By.xpath("//form[@id='answer_form']/div/div/div/textarea");
+	By getstartedBtn1 = By.xpath("//a[text()='Get Started']");;
 	By opertaionInStack = By.xpath("//a[text()='Operations in Stack']");
 	By implementation = By.xpath("//a[text()='Implementation']");
 	By applications = By.xpath("//a[text()='Applications']");
 	
+	
+	@BeforeStep
+	public void delay() {
+		try {
+
+			Thread.sleep(80);
+		} catch (InterruptedException e) {
+			System.out.println(e);
+			throw new RuntimeException(e);
+		}
+	}
 	@Then("user is on the home page and click on Stack get started button")
 	public void user_is_on_the_home_page_and_click_on_stack_get_started_button() {
 
 
 		
-		
-		List<WebElement> listOfStartedBtn =	driver.findElements(getstartedBtn);
+		List<WebElement> listOfStartedBtn =	driver.findElements(getstartedBtn1);
 		
 		listOfStartedBtn.get(3).click();
 	}
