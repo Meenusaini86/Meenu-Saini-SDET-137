@@ -16,7 +16,7 @@ public class Stack_SD {
 	
 	
 	By tryeditor = By.xpath("//form[@id='answer_form']/div/div/div/textarea");
-	By getstartedBtn1 = By.xpath("//a[text()='Get Started']");;
+	By getStartedBtnStack = By.xpath("//a[text()='Get Started']");
 	By opertaionInStack = By.xpath("//a[text()='Operations in Stack']");
 	By implementation = By.xpath("//a[text()='Implementation']");
 	By applications = By.xpath("//a[text()='Applications']");
@@ -37,9 +37,10 @@ public class Stack_SD {
 
 
 		
-		List<WebElement> listOfStartedBtn =	driver.findElements(getstartedBtn1);
+		List<WebElement> listOfStartedBtn =	driver.findElements(getStartedBtnStack);
 		
 		listOfStartedBtn.get(3).click();
+
 	}
 
 	@Given("user scroll downs and click on the Operations in Stack link")
