@@ -47,17 +47,9 @@ public class Signin_valid_invalid_SD {
 
 		driver.findElement(getStartedBtn).click();
 	}
-//	@Given("user is on the website home page and user click on get started button")
-//	public void user_is_on_the_website_home_page_and_user_click_on_get_started_button() {
-//
-//		driver = new ChromeDriver();
-//		driver.get(URL);
-//		
-//		driver.findElement(getStartedBtn).click();
-//
-//	}
-//
-//
+
+	
+	
 	@When("user is navigated to the login home page")
 	public void user_is_navigated_to_the_login_home_page() {
 
