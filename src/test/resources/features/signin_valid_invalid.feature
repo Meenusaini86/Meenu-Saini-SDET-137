@@ -28,7 +28,4 @@ Feature: Check login funtionality with valid and invalid credentials
     When click on login button
     Then System should alert user
 
-  Scenario: Feature tesing completed
-    Given Feature Testing Finished
-    When user close session
-    Then user close window
+

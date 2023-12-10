@@ -3,11 +3,8 @@ package stepdefinition;
 import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import io.cucumber.java.After;
-import io.cucumber.java.BeforeStep;
 import io.cucumber.java.en.*;
 
 public class Graph_SD {
@@ -65,3 +62,4 @@ public class Graph_SD {
 	}
 
 }
+
