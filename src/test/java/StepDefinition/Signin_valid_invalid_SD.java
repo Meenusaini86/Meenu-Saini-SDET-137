@@ -92,8 +92,7 @@ public class Signin_valid_invalid_SD {
 
 		driver.findElement(signoutBtn).click();
 		
-		driver.close();
-	    driver.quit();
+		
 
 	}
 
@@ -118,9 +117,7 @@ public class Signin_valid_invalid_SD {
 	public void system_should_alert_user() {
 
 		driver.findElement(inValidMsg).isDisplayed();
-		
-		driver.close();
-	    driver.quit();
+
 		
 	}
 

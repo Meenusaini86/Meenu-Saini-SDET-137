@@ -10,7 +10,7 @@ import io.cucumber.junit.Cucumber;
 
 @CucumberOptions(plugin = { "pretty", "html:target/signinreport.html" }, // reporting purpose
 		monochrome = false, // console output colour
-		tags = "@signin2", // tags from feature file
+		tags = "@signin", // tags from feature file
 		features = { "src/test/resources/features/signin_valid_invalid.feature" }, // location of feature files
 		glue = "stepdefinition/Signin_valid_invalid_SD") // location of step definition files
 

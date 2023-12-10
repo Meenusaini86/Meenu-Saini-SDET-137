@@ -103,7 +103,7 @@ public class Linked_listed_SD {
 
 	@When("user redirected to page tryeditor with  Run button to test")
 	public void user_redirected_to_page_tryeditor_with_run_button_to_test() {
-		//driver.findElement(tryeditor).isDisplayed();
+		
 		
 		driver.findElement(tryeditor).sendKeys("print 'hello'");
 		
@@ -162,11 +162,6 @@ public class Linked_listed_SD {
 		driver.findElement(Deletion).click();
 	}
 
-	@After
-	
-	public void close() {
-		driver.close();
-		driver.quit();
+
 	}
 	
-}
