@@ -12,7 +12,7 @@ import io.cucumber.java.en.*;
 
 public class Stack_SD {
 	
-	public static WebDriver driver;
+	
 	String URL = "https://dsportalapp.herokuapp.com/";
 	
 	
@@ -35,9 +35,9 @@ public class Stack_SD {
 	}
 	@Then("user is on the home page and click on Stack get started button")
 	public void user_is_on_the_home_page_and_click_on_stack_get_started_button() {
-		System.out.println("Testing ");
+		System.out.println("Testing -- user is on the home page and");
 		
-		List<WebElement> listOfStartedBtn =	driver.findElements(getStartedBtnStack);
+		List<WebElement> listOfStartedBtn =	 Linked_listed_SD.driver.findElements(getStartedBtnStack);
 		
 		listOfStartedBtn.get(3).click();
 
@@ -45,23 +45,25 @@ public class Stack_SD {
 
 	@Given("user scroll downs and click on the Operations in Stack link")
 	public void user_scroll_downs_and_click_on_the_operations_in_stack_link() {
+		System.out.println("Testing -- user scroll downs and click");
+		
 
-
-		driver.findElement(opertaionInStack).click();
+		//driver.findElement(opertaionInStack).click();
 	}
 
 	@Given("user scroll downs and click on the Implementation link")
 	public void user_scroll_downs_and_click_on_the_implementation_link() {
+		System.out.println("Testing -- user scroll downs and click on the Implem");
+		
 
-
-		driver.findElement(implementation).click();
+		//driver.findElement(implementation).click();
 	}
 
 	@Given("user scroll downs and click on the applications link")
 	public void user_scroll_downs_and_click_on_the_applications_link() {
 
 
-		driver.findElement(applications ).click();
+		//driver.findElement(applications ).click();
 	}
 
 }

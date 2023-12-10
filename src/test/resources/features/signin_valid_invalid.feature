@@ -1,5 +1,5 @@
 Feature: Check login funtionality with valid and invalid credentials
-  
+
   Background: 
     Given user is on the website home page
     And user click on get started button

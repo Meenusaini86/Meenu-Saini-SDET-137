@@ -91,9 +91,10 @@ public class Signin_valid_invalid_SD {
 	public void after_reaching_to_portal_home_page_user_clicks_on_the_logout_button() {
 
 		driver.findElement(signoutBtn).click();
+		
+		driver.close();
+	    driver.quit();
 
-		 driver.close();
-		 driver.quit();
 	}
 
 	@Given("user enters invalid username and valid password")
@@ -117,9 +118,10 @@ public class Signin_valid_invalid_SD {
 	public void system_should_alert_user() {
 
 		driver.findElement(inValidMsg).isDisplayed();
-
+		
 		driver.close();
 	    driver.quit();
+		
 	}
 
 	@Given("user enters valid username and invalid password")
