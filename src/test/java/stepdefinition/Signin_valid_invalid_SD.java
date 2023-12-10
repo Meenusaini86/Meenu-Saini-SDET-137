@@ -1,4 +1,4 @@
-package StepDefinition;
+package stepdefinition;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -22,16 +22,7 @@ public class Signin_valid_invalid_SD {
 	By signoutBtn = By.xpath("//div[2]//ul//a[3]");
 	By inValidMsg = By.className("alert-primary");
 
-	@BeforeStep
-	public void delay() {
-		try {
-
-			Thread.sleep(60);
-		} catch (InterruptedException e) {
-			System.out.println(e);
-			throw new RuntimeException(e);
-		}
-	}
+	
 
 	
 	@Given("user is on the website home page")
@@ -140,6 +131,24 @@ public class Signin_valid_invalid_SD {
 		driver.findElement(username).sendKeys("m2vs.com");
 		driver.findElement(password).sendKeys("auatum@23");
 
+	}
+	@Given("Feature Testing Finished")
+	public void feature_testing_finished() {
+
+
+	}
+
+	@When("user close session")
+	public void user_close_session() {
+	    
+	}
+
+	@Then("user close window")
+	public void user_close_window() {
+
+
+	 driver.close();
+	 driver.quit();
 	}
 
 }

@@ -1,4 +1,4 @@
-package StepDefinition;
+package stepdefinition;
 
 import java.util.List;
 
@@ -21,16 +21,7 @@ public class Graph_SD {
 	By graph = By.className("list-group-item");
 	By graphRepresentationsgraph = By.xpath("//a[text()='Graph Representations']");
 
-	@BeforeStep
-	public void delay() {
-		try {
-
-			Thread.sleep(800);
-		} catch (InterruptedException e) {
-			System.out.println(e);
-			throw new RuntimeException(e);
-		}
-	}
+	
 
 	@Then("user is on the home page and scroll down click on graph get started button")
 	public void user_is_on_the_home_page_and_scroll_down_click_on_graph_get_started_button() {

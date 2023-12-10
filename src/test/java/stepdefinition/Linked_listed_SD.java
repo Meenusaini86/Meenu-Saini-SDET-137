@@ -1,4 +1,4 @@
-package StepDefinition;
+package stepdefinition;
 
 
 
@@ -39,16 +39,16 @@ public class Linked_listed_SD {
 	By Insertion = By.xpath("//div[2]//ul[6]//a");
 	By Deletion = By.xpath("//div[2]//ul[7]//a");
 
-	@BeforeStep
-	public void delay() {
-		try {
-
-			Thread.sleep(80);
-		} catch (InterruptedException e) {
-			System.out.println(e);
-			throw new RuntimeException(e);
-		}
-	}
+//	@BeforeStep
+//	public void delay() {
+//		try {
+//
+//			Thread.sleep(80);
+//		} catch (InterruptedException e) {
+//			System.out.println(e);
+//			throw new RuntimeException(e);
+//		}
+//	}
 
 	@Given("user is on the website page and click on get started button")
 	public void user_is_on_the_website_page_and_click_on_get_started_button() {

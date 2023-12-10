@@ -1,4 +1,4 @@
-package StepDefinition;
+package stepdefinition;
 
 import java.util.List;
 
@@ -23,16 +23,7 @@ public class Stack_SD {
 	By applications = By.xpath("//a[text()='Applications']");
 	
 	
-	@BeforeStep
-	public void delay() {
-		try {
-
-			Thread.sleep(80);
-		} catch (InterruptedException e) {
-			System.out.println(e);
-			throw new RuntimeException(e);
-		}
-	}
+	
 	@Then("user is on the home page and click on Stack get started button")
 	public void user_is_on_the_home_page_and_click_on_stack_get_started_button() {
 		
