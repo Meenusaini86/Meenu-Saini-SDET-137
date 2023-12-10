@@ -1,7 +1,5 @@
 package stepdefinition;
 
-
-
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -13,8 +11,8 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.BeforeStep;
 import io.cucumber.java.en.*;
+
 public class Linked_listed_SD {
- 
 
 	public static WebDriver driver;
 	String URL = "https://dsportalapp.herokuapp.com/";
@@ -56,7 +54,6 @@ public class Linked_listed_SD {
 		driver = new ChromeDriver();
 		driver.get(URL);
 
-
 		driver.findElement(getStartedBtn).click();
 	}
 
@@ -82,16 +79,15 @@ public class Linked_listed_SD {
 	@And("user is on the home page and click on Linked list get started button")
 	public void user_is_on_the_home_page_and_click_on_linked_list_get_started_button() {
 
-	List<WebElement> listOfStartedBtn =	driver.findElements(getstartedBtn1);
-	
-	listOfStartedBtn.get(2).click();
-	
+		List<WebElement> listOfStartedBtn = driver.findElements(getstartedBtn1);
+
+		listOfStartedBtn.get(2).click();
+
 	}
 
 	@Given("user scroll downs and click on the introduction link")
 	public void user_scroll_downs_and_click_on_the_introduction_link() {
 
-	
 		driver.findElement(Introduction).click();
 	}
 
@@ -103,65 +99,52 @@ public class Linked_listed_SD {
 
 	@When("user redirected to page tryeditor with  Run button to test")
 	public void user_redirected_to_page_tryeditor_with_run_button_to_test() {
-		
-		
+
 		driver.findElement(tryeditor).sendKeys("print 'hello'");
-		
+
 	}
 
 	@Then("after writing code in tryeditor, user click on RUN button to check result")
 	public void after_writing_code_in_tryeditor_user_click_on_run_button_to_check_result() {
- 
-		
-	     driver.findElement(RunButton).click();
+
+		driver.findElement(RunButton).click();
 	}
 
-	
 	@Given("user scrolls down and click on the Create a Linked List link")
 	public void user_scrolls_down_and_click_on_the_create_a_linked_list_link() {
- 
+
 		driver.findElement(createLinkedList).click();
 	}
 
-	
-
 	@Given("user scrolls down and click on the Types of Linked list link")
 	public void user_scrolls_down_and_click_on_the_types_of_linked_list_link() {
- 
+
 		driver.findElement(Typesoflinkedlist).click();
 	}
 
-	
 	@Given("user scrolls down and click on the Implementation of linked list in python link")
 	public void user_scrolls_down_and_click_on_the_implementation_of_linked_list_in_python_link() {
- 
+
 		driver.findElement(Implementation).click();
 	}
 
-	
 	@Given("user scrolls down and click on the Traversal link")
 	public void user_scrolls_down_and_click_on_the_traversal_link() {
- 
+
 		driver.findElement(Traversal).click();
 	}
-
-	
 
 	@Given("user scrolls down and click on the Insertion link")
 	public void user_scrolls_down_and_click_on_the_insertion_link() {
 
-		
 		driver.findElement(Insertion).click();
 	}
 
-	
 	@Given("user scroll sdown and click on the Deletion link")
 	public void user_scroll_sdown_and_click_on_the_deletion_link() {
 
-		
 		driver.findElement(Deletion).click();
 	}
 
 
-	}
-	
+}

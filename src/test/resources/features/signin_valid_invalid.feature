@@ -27,5 +27,3 @@ Feature: Check login funtionality with valid and invalid credentials
     Given user enters invalid username and invalid password
     When click on login button
     Then System should alert user
-
-

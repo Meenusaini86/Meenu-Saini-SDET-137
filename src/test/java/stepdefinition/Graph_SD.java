@@ -5,11 +5,10 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import io.cucumber.java.After;
 import io.cucumber.java.en.*;
 
 public class Graph_SD {
-
-	
 
 	By Tryhere = By.className("btn-info");
 	By tryeditor = By.xpath("//form[@id='answer_form']/div/div/div/textarea");
@@ -17,8 +16,6 @@ public class Graph_SD {
 	By getStartedBtn1 = By.xpath("//a[text()='Get Started']");
 	By graph = By.className("list-group-item");
 	By graphRepresentationsgraph = By.xpath("//a[text()='Graph Representations']");
-
-	
 
 	@Then("user is on the home page and scroll down click on graph get started button")
 	public void user_is_on_the_home_page_and_scroll_down_click_on_graph_get_started_button() {
@@ -61,5 +58,5 @@ public class Graph_SD {
 
 	}
 
-}
 
+}

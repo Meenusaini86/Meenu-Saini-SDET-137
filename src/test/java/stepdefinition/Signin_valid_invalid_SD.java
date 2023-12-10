@@ -23,40 +23,41 @@ public class Signin_valid_invalid_SD {
 	By signoutBtn = By.xpath("//div[2]//ul//a[3]");
 	By inValidMsg = By.className("alert-primary");
 
-
-
-	
 	@Given("user is on the website home page")
 	public void user_is_on_the_website_home_page() {
-	   
-		driver= new ChromeDriver();
-	    driver.get(URL);
-		
+
+		driver = new ChromeDriver();
+		driver.get(URL);
+
+		System.out.println("Inside user_is_on_the_website_home_page ");
+
 	}
 
 	@And("user click on get started button")
 	public void user_click_on_get_started_button() {
 
+		System.out.println("Inside 1");
 
 		driver.findElement(getStartedBtn).click();
 	}
 
-	
-	
 	@When("user is navigated to the login home page")
 	public void user_is_navigated_to_the_login_home_page() {
+		System.out.println("Inside 2");
 
 		driver.findElement(NumpyNinja).isDisplayed();
 	}
 
 	@Then("user clicks on the sign in button")
 	public void user_clicks_on_the_sign_in_button() {
+		System.out.println("Inside 3");
 
 		driver.findElement(signinBtn).click();
 	}
 
 	@Given("user enters valid username and password")
 	public void user_enters_valid_username_and_password() {
+		System.out.println("Inside user_enters_valid_username_and_password");
 
 		driver.findElement(username).isDisplayed();
 		driver.findElement(password).isDisplayed();
@@ -68,6 +69,7 @@ public class Signin_valid_invalid_SD {
 
 	@When("user clicks on the login button")
 	public void user_clicks_on_the_login_button() {
+		System.out.println("Inside 5");
 
 		driver.findElement(LoginBtn).click();
 
@@ -75,6 +77,7 @@ public class Signin_valid_invalid_SD {
 
 	@Then("user is navigated to the portal home page")
 	public void user_is_navigated_to_the_portal_home_page() {
+		System.out.println("Inside 6");
 
 		driver.findElement(signoutBtn).isDisplayed();
 
@@ -82,10 +85,9 @@ public class Signin_valid_invalid_SD {
 
 	@And("after reaching to portal home page user clicks on the logout button")
 	public void after_reaching_to_portal_home_page_user_clicks_on_the_logout_button() {
+		System.out.println("Inside 7");
 
 		driver.findElement(signoutBtn).click();
-		
-		
 
 	}
 
@@ -111,7 +113,6 @@ public class Signin_valid_invalid_SD {
 
 		driver.findElement(inValidMsg).isDisplayed();
 
-		
 	}
 
 	@Given("user enters valid username and invalid password")
@@ -135,15 +136,6 @@ public class Signin_valid_invalid_SD {
 
 	}
 
-	@After 
-	public void closewindow() {
-		
-		driver.close();
-		driver.quit();
-	}
-	
-	
-	 
+
+
 }
-
-
