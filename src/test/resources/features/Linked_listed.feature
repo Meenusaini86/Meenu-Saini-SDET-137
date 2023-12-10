@@ -1,6 +1,4 @@
-
 @linkedlist
-
 Feature: Check funtionality for Linked List
 
   Background: 
@@ -14,41 +12,46 @@ Feature: Check funtionality for Linked List
     And user scrolls down and clicks on TRY HERE button
     When user redirected to page tryeditor with  Run button to test
     Then after writing code in tryeditor, user click on RUN button to check result
+    And user close the window
 
   Scenario: Create a Linked List
     Given user scrolls down and click on the Create a Linked List link
     And user scrolls down and clicks on TRY HERE button
     When user redirected to page tryeditor with  Run button to test
     Then after writing code in tryeditor, user click on RUN button to check result
+    And user close the window
 
   Scenario: Types of Linked list
     Given user scrolls down and click on the Types of Linked list link
     And user scrolls down and clicks on TRY HERE button
     When user redirected to page tryeditor with  Run button to test
     Then after writing code in tryeditor, user click on RUN button to check result
+    And user close the window
 
   Scenario: Implementation of linked list in python
     Given user scrolls down and click on the Implementation of linked list in python link
     And user scrolls down and clicks on TRY HERE button
     When user redirected to page tryeditor with  Run button to test
     Then after writing code in tryeditor, user click on RUN button to check result
+    And user close the window
 
   Scenario: Traversal
     Given user scrolls down and click on the Traversal link
     And user scrolls down and clicks on TRY HERE button
     When user redirected to page tryeditor with  Run button to test
     Then after writing code in tryeditor, user click on RUN button to check result
+    And user close the window
 
   Scenario: Insertion
     Given user scrolls down and click on the Insertion link
     And user scrolls down and clicks on TRY HERE button
     When user redirected to page tryeditor with  Run button to test
     Then after writing code in tryeditor, user click on RUN button to check result
+    And user close the window
 
   Scenario: Deletion
     Given user scroll sdown and click on the Deletion link
     And user scrolls down and clicks on TRY HERE button
     When user redirected to page tryeditor with  Run button to test
     Then after writing code in tryeditor, user click on RUN button to check result
-    
-    
+    And user close the window

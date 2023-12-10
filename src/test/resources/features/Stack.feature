@@ -12,15 +12,18 @@ Feature: Check funtionality for Stack
     And user scrolls down and clicks on TRY HERE button
     When user redirected to page tryeditor with  Run button to test
     Then after writing code in tryeditor, user click on RUN button to check result
+    And user close the window
 
   Scenario: Implementation
     Given user scroll downs and click on the Implementation link
     And user scrolls down and clicks on TRY HERE button
     When user redirected to page tryeditor with  Run button to test
     Then after writing code in tryeditor, user click on RUN button to check result
+    And user close the window
 
   Scenario: Applications
     Given user scroll downs and click on the applications link
     And user scrolls down and clicks on TRY HERE button
     When user redirected to page tryeditor with  Run button to test
     Then after writing code in tryeditor, user click on RUN button to check result
+    And user close the window

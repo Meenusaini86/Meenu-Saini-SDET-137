@@ -12,9 +12,11 @@ Feature: Check funtionality for Graph
     And now scrolls down and clicks on TRY HERE button
     When redirected to page tryeditor and write text in it
     Then user click on RUN button to check result
+    And user close the window
 
   Scenario: Graph Representations
     Given user scroll downs and click on the Graph Representations link
     And now scrolls down and clicks on TRY HERE button
     When redirected to page tryeditor and write text in it
     Then user click on RUN button to check result
+    And user close the window

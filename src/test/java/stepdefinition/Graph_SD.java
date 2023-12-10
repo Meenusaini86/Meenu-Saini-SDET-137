@@ -58,5 +58,12 @@ public class Graph_SD {
 
 	}
 
+	@Then("user close the window")
+	public void user_close_the_window() {
+
+		if (Linked_listed_SD.driver != null)
+
+			Linked_listed_SD.driver.close();
+	}
 
 }
